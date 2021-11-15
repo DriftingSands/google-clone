@@ -1,0 +1,209 @@
+header {
+    width: 100%;
+    text-align: right;
+    padding: 0px 0px;
+
+}
+
+header * {
+    margin: 0 5px;
+}
+
+header svg {
+    border: red solid 2px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    /*border has to be added here or else the icon will move when hovered over*/
+    border: solid transparent 4px;
+    background-color: transparent;
+}
+
+header svg:hover {
+    border: solid rgba(128, 128, 128, 0.3) 4px;
+    background-color: rgba(128, 128, 128, 0.3);
+    cursor: pointer;
+}
+
+header .profileIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    border-radius: 50%;
+    vertical-align: middle;
+    /*border has to be added here or else the icon will move when hovered over*/
+    border: solid transparent 4px;
+    background-color: transparent;
+}
+
+header .profileIcon:hover {
+    border: solid rgba(128, 128, 128, 0.3) 4px;
+    background-color: rgba(128, 128, 128, 0.3);
+    cursor: pointer;
+}
+
+.headerLink {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 48, 48);
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.headerLink:hover {
+    text-decoration: underline;
+}
+
+.logoImg {
+    display: block;
+    margin: auto;
+    top: 100px;
+    border:  5px solid transparent;
+    border-radius: 10px;
+}
+/*
+.logoImg:hover {
+    border: 5px solid red;
+}
+*/
+
+#searchBar {
+    background: url("/Clone Google/images/button-icons.webp") top left no-repeat;
+    background-position-y: 4px;
+    background-position-x: 4px;
+    background-size: 30px;
+    display: block;
+    color: black;
+
+    padding: 10px;
+    padding-left: 40px;
+    border: lightgray 1px solid;
+    border-radius: 40px;
+    
+    width: 50%;
+    min-width: 200px;
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(148, 148, 148);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(148, 148, 148);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(148, 148, 148);
+  }
+
+#searchBar:focus {
+    outline: none;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#searchIcon {
+    position: absolute;
+    box-sizing: border-box;
+    /*border: 5px solid red;*/
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: 0px 0px;
+    vertical-align: middle;
+    margin-left: -215px;
+}
+
+.searchButtonsBox {
+    text-align: center;
+}
+
+.searchButtons {
+    color: rgb(77, 77, 77);
+    background-color: rgb(235, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.searchButtons:hover {
+    border: 1px solid rgb(119, 119, 119);
+}
+
+.searchButtons:focus {
+    border: 1px solid lightblue;
+    background-color: rgb(184, 239, 255);
+}
+
+.languages {
+    text-align: center;
+}
+
+
+.languages a, .languages p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: inline;
+}
+
+.languages a {
+    color: blue;
+}
+
+.languages a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    color: rgb(116, 116, 116);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    border-bottom: 1px solid black;
+    padding-left: 40px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+.footerLinkMain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.footerLink {
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    display: inline;
+    
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+    cursor: progress;
+}
